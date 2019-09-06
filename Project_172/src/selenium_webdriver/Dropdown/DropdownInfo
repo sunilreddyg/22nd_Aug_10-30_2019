@@ -14,7 +14,8 @@ Html Source:-->
 
 				Syntax:--->to select dropdown option
 			
-					Select obj=new Select(webElement);           //webelement:---> locate element 								at browser window	
+					Select obj=new Select(webElement);           
+					//webelement:---> locate element 								at browser window	
 					obj.SelectByvisibletext("dropdown optioname");			 
 					obj.SelectByvalue("option value property");
 					obj.SelectByindex(int option-position);
