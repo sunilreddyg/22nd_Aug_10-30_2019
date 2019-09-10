@@ -95,7 +95,7 @@ Syntax:-->
 ============================================================
 ismultiple:---->
 
-	* method usefull to find Dropdown selection state allow multiple
+	* method usefull to find Dropdown selection state, allow multiple
 	   or single option selection
 	* ismultiple is a boolean return type it return <<<true>>> on multiple 
 	 selection, and <<<false>>> on single option selection
