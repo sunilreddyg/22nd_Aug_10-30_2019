@@ -104,30 +104,27 @@ ismultiple:---->
 	boolean flag=new Select(webelement).ismultiple();
 	System.out.println(flag);
 =============================================================
-Example:--->Write a program to deselect, any single option from multiple Selection 
-			using visible text
+Example:--->Write a program to deselect, any single option from 
+			multiple Selection using visible text
 
 syntax:--->
 
 	new Select(Webelement).deselectbyvisibletext("OptionName");
 
-
 ----------------------------------------------------------------------------
 
-Example:--> Write a program to deselect, any single option from multiple Selection 
-		 using <<Deselectbyindex>>
+Example:--> Write a program to deselect, any single option from multiple 
+			Selection using <<Deselectbyindex>>
 
 Syntax:-->
 	new Select(webElement).deselectbyindex(indexnumber);
-
 ----------------------------------------------------------------------
 
-Example:---> Write a program to deselect, any single option from multiple Selection 
-		 using <<Deselectbyvalue>>
+Example:---> Write a program to deselect, any single option 
+from multiple Selection using <<Deselectbyvalue>>
 Syntax:-->
 
 new Select(webelement).deselectbyValue("optionvalue");
-
 -----------------------------------------------------------------------
 
 Example:---> How to Deselect all options from selection
