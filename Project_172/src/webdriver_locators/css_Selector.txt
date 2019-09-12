@@ -23,7 +23,8 @@ CssSelector:-->
 
 
 Default_css:-->
-	Default css target object with only   ID and Class property [optionally tagname]
+	Default css target object with only   ID and Class property 
+	[optionally tagname]
 
 
 	htmlsource:-->
@@ -48,7 +49,7 @@ Default_css:-->
 
 		driver.findElement(By.cssSelector("input#email.login"));
 ===============================================================>>
-page htmlsource:--->
+page htmlsource:--->  identify Location using combination of attributes
 
 1. <div class="C"></div>
 2. <div id="x" class="B"</div>
@@ -58,7 +59,7 @@ Identify 3rd element:--->
 
 		By.id("x")  ------> 2 nd
 		By.class("C")  ----> 1st 
-		By.cssSelector("#x.C")   ---> 3rd Element
+		By.cssSelector("#x.C")
 
 =============================================================
 CssSelector =>  Default cssselector --->Combinations
