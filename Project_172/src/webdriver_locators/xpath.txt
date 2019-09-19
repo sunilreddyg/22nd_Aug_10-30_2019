@@ -94,12 +94,25 @@ HtmlSource:-->
 		By.xpath("//div[@id='login_conainer']/input")
 
 =====================================================================
+Xpath With Duplicate Node:--> Identify With index position..
 		
+<html>
+<body>
+		<div id="reg_login"  class="form">
+				<input id="email" type="text"></input>
+		</div>
+	
+		<div id="reg_login"  class="form">
+				<input id="email" type="text"></input>  ------>>>>TargetElement
+		</div>
+</body>
+</html>			
 		
+		Syntax:-->
+					(Xpath Expresssion)[int pos]
 		
-		
-		
-		
+					(//input[@id='email'])[2]
+================================================================
 		
 		
 		
