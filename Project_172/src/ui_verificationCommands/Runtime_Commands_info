@@ -118,7 +118,7 @@ getCssvalue:-->
 						font-size
 						color
 						background-color
-						text-align				
+						text-alignment				
 		Syntax:-->
 				
 			//Identify Element
