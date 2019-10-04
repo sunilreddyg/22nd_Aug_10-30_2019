@@ -25,12 +25,14 @@ public class SwitchTo_Next_Window {
 		
 		//Get All Window Dynamic ID's
 		Set<String> All_window_IDs=driver.getWindowHandles();
+		//Iterate for number of windows using foreach loop.
 		for (String EachwindowID : All_window_IDs) 
 		{
 			driver.switchTo().window(EachwindowID);
+			//Accept only when EachWindowID mismatch with MainWindowID
 			if(!MainWindowID.equals(EachwindowID))
 			{
-				break;
+				break;  //Stop Iteration and get execution control out of for loop.
 			}
 		}
 		
