@@ -13,7 +13,7 @@ public class Drag_And_DropBY {
 	public static void main(String[] args) 
 	{
 		//set runtime environment variable
-		String driver_path="D:\\sunill\\29th_Apr_7-30_AM_2019\\Project_165\\drivers\\chromedriver.exe";
+		String driver_path="Browser_Drivers\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver",driver_path);
 				
 

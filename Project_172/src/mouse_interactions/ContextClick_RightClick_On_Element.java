@@ -12,7 +12,7 @@ public class ContextClick_RightClick_On_Element {
 	public static void main(String[] args) throws Exception {
 		
 		//Set Runtime environment variable for chrome driver
-		String chrome_path="D:\\sunill\\3rd_June_10-30_AM_2019\\drivers\\chromedriver.exe";
+		String chrome_path="Browser_Drivers\\\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", chrome_path);
 					    
 		//browser initiation
