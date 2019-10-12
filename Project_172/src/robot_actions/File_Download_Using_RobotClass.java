@@ -1,4 +1,4 @@
-package mouse_interactions;
+package robot_actions;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -14,7 +14,7 @@ public class File_Download_Using_RobotClass
 	{
 		
 		//set runtime environment variable
-		String driver_path="D:\\sunill\\3rd_June_10-30_AM_2019\\drivers\\geckodriver.exe";
+		String driver_path="Browser_Drivers\\geckodriver.exe";
 		System.setProperty("webdriver.gecko.driver",driver_path);
 					
 		//browser initiation command
