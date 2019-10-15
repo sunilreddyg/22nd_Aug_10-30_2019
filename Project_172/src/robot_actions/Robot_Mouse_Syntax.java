@@ -27,8 +27,7 @@ public class Robot_Mouse_Syntax
 		
 		//Scroll
 		robot.mouseWheel(100);
-		
-		
+	
 	}
 
 }
