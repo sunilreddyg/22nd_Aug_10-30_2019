@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/commons-io-2.6/commons-io-2.6-sources.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/commons-io-2.6/commons-io-2.6-tests.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/selenium-leg-rc-3.141.59.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
