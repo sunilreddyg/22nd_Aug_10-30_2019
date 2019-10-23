@@ -2,6 +2,7 @@ package corejava.Collections;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class List_Array_List 
@@ -26,7 +27,7 @@ public class List_Array_List
 		
 		
 		/*Because list is inorder collection of object, So that
-		  We can any object form list using index number*/
+		  We can access any object form list using index number*/
 		String toolname=list.get(2);
 		System.out.println("2nd index value is => "+toolname);
 		
@@ -48,11 +49,10 @@ public class List_Array_List
 		System.out.println("Collection status => "+flag1);
 		
 		//Usng foreach loop read all collection of objects
-		for (String each_object : list) 
+		for (String eachobjet : list) 
 		{
-			System.out.println("=> "+each_object);
+			System.out.println("=> "+eachobjet);
 		}
-		
 		
 		//using for loop iterate for collection of objects
 		for (int i = 0; i < list.size(); i++) 
@@ -61,6 +61,20 @@ public class List_Array_List
 			 String obj=list.get(i);
 			 System.out.println("#=> "+obj);
 		}
+		
+		
+		//Using while loop iterate for collection of object
+		
+		//Iterator get all list of  option into individual tokens.
+		
+		Iterator<String> itr=list.iterator();
+		while(itr.hasNext())
+		{
+			String token=itr.next();
+			System.out.println("-->"+token);
+		}
+		
+		
 		
 		
 		
