@@ -8,7 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Group_Links {
+public class Group_Links
+{
 
 	public static void main(String[] args) throws Exception {
 		//set runtime environment variable
