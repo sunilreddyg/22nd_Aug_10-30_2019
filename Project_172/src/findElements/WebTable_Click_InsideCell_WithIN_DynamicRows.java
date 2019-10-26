@@ -8,10 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Webtable_Get_Specific_Reocord_From_Dynamic_rows {
+public class WebTable_Click_InsideCell_WithIN_DynamicRows
+{
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
+		
 
 		//Set Runtime environment variable for chrome driver
 		String chrome_path="Browser_Drivers\\chromedriver.exe";
@@ -38,25 +39,22 @@ public class Webtable_Get_Specific_Reocord_From_Dynamic_rows {
 			//target 2nd row
 			WebElement DynamicRow=rows.get(i);
 			
-			//Get Each dynamic row text
-			String Rowtext=DynamicRow.getText();
-
-			if(Rowtext.contains("TCS"))
+			//Get Dynamic row text
+			String Row_text=DynamicRow.getText();
+			
+			if(Row_text.contains("TCS"))
 			{
 				//Find list of cells under selected table
 				List<WebElement> Cells=DynamicRow.findElements(By.tagName("td"));
-				
-				//Target 3rd cell
-				String Company_name=Cells.get(0).getText();
-				String HighPrice=Cells.get(3).getText();
-				
-				System.out.println(Company_name+"   "+HighPrice);
+				//Identify seventh cell
+				Cells.get(7).findElement(By.tagName("a")).click();
+				break;
 				
 			}
 			
 			
+			
 		}
-		
 
 	}
 

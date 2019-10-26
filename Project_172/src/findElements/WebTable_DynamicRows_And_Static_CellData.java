@@ -2,13 +2,12 @@ package findElements;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class WebTable_DynamicRows_And_Statice_CellData {
+public class WebTable_DynamicRows_And_Static_CellData {
 
 	public static void main(String[] args) {
 		
@@ -37,28 +36,23 @@ public class WebTable_DynamicRows_And_Statice_CellData {
 		//Find list of rows available with in table
 		List<WebElement> rows=table.findElements(By.tagName("tr"));
 		
-		for (int i = 1; i < rows.size(); i++) 
+		//Iterate for number of rows
+		for (int i = 1 ; i < rows.size(); i++) 
 		{
-			//target 2nd row
+			//Target Each row
 			WebElement DynamicRow=rows.get(i);
 			
-			//Find list of cells under selected table
-			List<WebElement> Cells=DynamicRow.findElements(By.tagName("td"));
-			
-			//Target 3rd cell
-			String Company_name=Cells.get(0).getText();
-			String HighPrice=Cells.get(3).getText();
-			
-			System.out.println(Company_name+"   "+HighPrice);
+			//Find List of cell under each dynamic row
+			List<WebElement> cells=DynamicRow.findElements(By.tagName("td"));
 			
 			
+			//get Companyname and highprice in every row
+			String CompanyName=cells.get(0).getText();
+			String HighPrice=cells.get(3).getText();
+			
+			System.out.println(CompanyName+"   "+HighPrice);
 		}
-		
-		
-		
-		
-		
-
+			
 
 	}
 
