@@ -92,6 +92,48 @@ public class Search_Flights
 		
 	}
 	
+	//InputData
+		public String Exp_page_header="Search flights";
+		public String Exp_home_err_msg="Sorry, but we can't continue until you fix everything that's marked in RED";
+		
+		
+		
+		/*
+		 * Reusable method:--> Verify Page Header displayed at webpage
+		 */
+		public void Verify_Page_Header_Visibility()
+		{
+			 if(Page_header.isDisplayed())
+				 System.out.println("header visible at webpage");
+			 else
+				 System.out.println("header not visible at webpage");
+			
+		}
+		
+		
+		//Reusable Method:--> Verify Expected Header visible at webpage
+		public void Verify_Expected_Header_Visibility()
+		{
+			String Runtime_Header_text=Page_header.getText();
+			if(Runtime_Header_text.equals(Exp_page_header))
+				System.out.println("Expected Header visible at webpage");
+			else
+				System.out.println("Expected Header not visible at webpage");
+		}
+		
+		
+		//reusable method:--> verify home error message displayed 
+		public void Verify_Home_error_msg_displayed_on_Empty_Search()
+		{
+			String Runtime_text=Home_error_msg.getText();
+			if(Runtime_text.contains(Exp_home_err_msg))
+				System.out.println("As expected error msg displayed at webpage");
+			else
+				System.out.println("Expected home error message displayed at webpage");
+		}
+		
+
+	
 	
 	
 	
