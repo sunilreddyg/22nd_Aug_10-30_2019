@@ -1,4 +1,4 @@
-package method_parameters;
+package method_return_types;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -7,16 +7,15 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -371,5 +370,185 @@ public class Repository
 		 }
 		 
 		 
-
+		 /*
+		 * KeywordName:--> Verify title presented at webpage.
+		 * Author:-->
+		 * CreatedOn;-->
+		 * ReviewedBy:-->
+		 * Parameters used:--> Local
+		 * LastUpdationDate:-->
+		 */	 
+		 public boolean isTitle_presented(String Exp_title)
+		 {
+			 String Runtime_title=driver.getTitle();
+			 boolean flag=Runtime_title.contains(Exp_title);
+			 return flag;
+		 }
+		 
+		 /*
+		 * KeywordName:--> Verify title presented using explicit wait.
+		 * Author:-->
+		 * CreatedOn;-->
+		 * ReviewedBy:-->
+		 * Parameters used:--> Local
+		 * LastUpdationDate:-->
+		 */	 
+		 public boolean wait_and_VerifyTitle_Presented(String Exp_title)
+		 {
+			 try {
+				 boolean flag=wait.until(ExpectedConditions.titleContains(Exp_title));
+				 return flag;
+			} catch (TimeoutException e) {
+				return false;
+			}
+			
+		 }
+		 
+		 
+		 /*
+		 * KeywordName:--> Verify url presented using explicit wait.
+		 * Author:-->
+		 * CreatedOn;-->
+		 * ReviewedBy:-->
+		 * Parameters used:--> Local
+		 * LastUpdationDate:-->
+		 */	 
+		 public boolean is_urlpresented(String Exp_url)
+		 {
+			 try {
+				 boolean flag= wait.until(ExpectedConditions.urlContains(Exp_url));
+				 return flag;
+			} catch (TimeoutException e) {
+				return false;
+			}
+			
+		 }
+		 
+		 
+		 /*
+		 * KeywordName:--> Verify Element presented at source
+		 * Author:-->
+		 * CreatedOn;-->
+		 * ReviewedBy:-->
+		 * Parameters used:--> Local
+		 * LastUpdationDate:-->
+		 */	 
+		 	public boolean is_Element_presented(String Exp_elementSource)
+		 	{
+		 			String Runtime_pageSource=driver.getPageSource();
+		 			boolean flag=Runtime_pageSource.contains(Exp_elementSource);
+		 			return flag;
+		 	}
+		 	
+		 	
+		 	 /*
+			 * KeywordName:--> Verify text presented at element.
+			 * Author:-->
+			 * CreatedOn;-->
+			 * ReviewedBy:-->
+			 * Parameters used:--> Local
+			 * LastUpdationDate:-->
+			 */	 
+		 	public boolean is_text_presented_At_Element(By locator,String exp_text)
+		 	{
+		 		try {
+		 			boolean flag=wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, exp_text));
+			 		return flag;
+				} catch (Exception e) {
+					e.printStackTrace();
+					return false;
+				}
+		 		
+		 	}
+		 	
+		 	
+		 	/*
+			 * KeywordName:--> Verif text visible at webpage.
+			 * Author:-->
+			 * CreatedOn;-->
+			 * ReviewedBy:-->
+			 * Parameters used:--> Local
+			 * LastUpdationDate:-->
+			 */	 
+		 	public boolean istext_visible_at_webpage(String exp_text)
+		 	{
+		 		String Page_Text=driver.findElement(By.tagName("body")).getText();
+		 		boolean flag=Page_Text.contains(exp_text);
+		 		return flag;
+		 	}
+		 	
+		 	
+		 	/*
+			 * KeywordName:--> Verif expected input available at editbox
+			 * Author:-->
+			 * CreatedOn;-->
+			 * ReviewedBy:-->
+			 * Parameters used:--> Local
+			 * LastUpdationDate:-->
+			 */	 
+		 	public boolean isInput_presented_At_Editbox(By locator,String input)
+		 	{
+		 		try {
+		 			boolean flag=wait.until(ExpectedConditions.textToBePresentInElementValue(locator, input));
+		 			return flag;
+				} catch (Exception e) {
+					return false;
+				}
+		 		
+		 	}
+		 
+		 	/*
+			 * KeywordName:--> Method verify alert presented at webpage
+			 * Author:-->
+			 * CreatedOn;-->
+			 * ReviewedBy:-->
+			 * Parameters used:--> Local
+			 * LastUpdationDate:-->
+			 */	
+		 	public boolean isAlert_Presented()
+		 	{
+		 		try {
+					driver.switchTo().alert();
+					return true;
+				} catch (Exception e) {
+					return false;
+				}
+		 	}
+		 	
+		 	/*
+			 * KeywordName:--> Method  verify Expected text presented at alert
+			 * Author:-->
+			 * CreatedOn;-->
+			 * ReviewedBy:-->
+			 * Parameters used:--> Local
+			 * LastUpdationDate:-->
+			 */	
+		 	public boolean is_alert_text_presented(String exp_alert_text)
+		 	{
+		 		boolean flag=false;
+		 		if(isAlert_Presented())
+		 		{
+		 			String Runtime_alert_text=driver.switchTo().alert().getText();
+		 			flag=Runtime_alert_text.contains(exp_alert_text);
+		 			driver.switchTo().alert().accept();
+		 			return flag;
+		 		}
+		 		else
+		 		{
+		 			return flag;
+		 		}
+		 	}
+		 	
+		 	
+		 	/*
+			 * KeywordName:--> Close alert window
+			 * Author:-->
+			 * CreatedOn;-->
+			 * ReviewedBy:-->
+			 * Parameters used:--> Local
+			 * LastUpdationDate:-->
+			 */	
+		 	
+		 	
+		 	
 }
