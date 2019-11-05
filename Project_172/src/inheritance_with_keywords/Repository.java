@@ -1,4 +1,4 @@
-package method_return_types;
+package inheritance_with_keywords;
 
 import java.awt.AWTException;
 import java.awt.Robot;
