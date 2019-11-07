@@ -17,5 +17,16 @@
 	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/selenium-leg-rc-3.141.59.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/extentreports-2.41.2.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/poi-3.17/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/poi-3.17/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/poi-3.17/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/poi-3.17/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/poi-3.17/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/poi-3.17/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/poi-3.17/ooxml-lib/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/poi-3.17/ooxml-lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/poi-3.17/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/poi-3.17/lib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/22nd_10-30_Aug_2019/selenium-libraries/poi-3.17/lib/commons-logging-1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
