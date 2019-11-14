@@ -22,6 +22,7 @@ public class Junit_WebDriver_Testcase
 	static String firefox_path="Browser_Drivers\\geckodriver.exe";
 	static WebDriver driver;
 	static String url="http://facebook.com";
+	
 	public @Rule TestName test=new TestName();  //get Current constructed method name
 	
 	@BeforeClass

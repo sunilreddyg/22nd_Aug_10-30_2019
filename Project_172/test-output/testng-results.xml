@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="499" started-at="2019-11-14T13:05:53 IST" finished-at="2019-11-14T13:05:54 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="499" started-at="2019-11-14T13:05:53 IST" finished-at="2019-11-14T13:05:54 IST">
+      <class name="framework_testng.ExtentReports.TestSuite2">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="beforeClass" is-config="true" duration-ms="140" started-at="2019-11-14T13:05:53 IST" finished-at="2019-11-14T13:05:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void framework_testng.ExtentReports.TestSuite2.tc001_reg_INvalid()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tc001_reg_INvalid()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="tc001_reg_INvalid" duration-ms="0" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_reg_INvalid -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tc001_reg_valid()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="tc001_reg_valid" duration-ms="0" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_reg_valid -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void framework_testng.ExtentReports.TestSuite2.tc001_reg_valid()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="afterClass" is-config="true" duration-ms="312" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- framework_testng.ExtentReports.TestSuite2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
