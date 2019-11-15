@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="framework_testng.Testng_Method_Dependencies">
+        <methods>
+          <include name="User_login"/>
+          <include name="Verify_Email_At_Sentemails_AfterSendEmail"/>
+          <include name="Browser_launch"/>
+          <include name="Search_email"/>
+          <include name="Verify_Email_At_inbox"/>
+          <include name="ComposeEmail"/>
+          <include name="User_Signout"/>
+          <include name="App_Load"/>
+          <include name="Close_browser"/>
+          <include name="SetUp_browser"/>
+        </methods>
+      </class> <!-- framework_testng.Testng_Method_Dependencies -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
