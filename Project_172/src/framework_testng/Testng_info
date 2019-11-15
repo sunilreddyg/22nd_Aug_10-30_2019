@@ -157,23 +157,20 @@ How to insert assert statement in testng class...
 
 Assert:-->
 	Assert is a valdation statement, it abort the run on failure, in testng
-	it abort the method execution on failure..
+	it abort the @Test method execution on failure..
 
 	Asserttrue:--. Boolean comparsion
 	AssertEquals:--> Any String or other datatype comparision
 
-	  Assert.assertEquals("selenium", "selenium");
-	  Reporter.log("Match Found");
+	Assert.assertEquals("Act", "Exp");
+	Reporter.log("Match Found");
 	  
-	  Assert.assertTrue(true);
-	  Repoter.log("Expected result found")
+	Assert.assertTrue(true);
+	Repoter.log("Expected result found")
 	  
-
 	Assert Statement send report to EmailableReports on Failure,
 	On success manually we need to define using Reporter.log option.
 				
-
-
 ---------TestNG suite file architecture---------------------
 
 <suite name="suitename">

@@ -1,59 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
   <reporter-output>
+    <line>
+      <![CDATA[tcoo2 executed]]>
+    </line>
+    <line>
+      <![CDATA[tcoo3 executed]]>
+    </line>
+    <line>
+      <![CDATA[tcoo5 executed]]>
+    </line>
+    <line>
+      <![CDATA[tcoo6 executed]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="499" started-at="2019-11-14T13:05:53 IST" finished-at="2019-11-14T13:05:54 IST">
+  <suite name="default-suite" duration-ms="63" started-at="2019-11-15T12:45:00 IST" finished-at="2019-11-15T12:45:00 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="499" started-at="2019-11-14T13:05:53 IST" finished-at="2019-11-14T13:05:54 IST">
-      <class name="framework_testng.ExtentReports.TestSuite2">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="beforeClass" is-config="true" duration-ms="140" started-at="2019-11-14T13:05:53 IST" finished-at="2019-11-14T13:05:54 IST">
+    <test name="test1" duration-ms="63" started-at="2019-11-15T12:45:00 IST" finished-at="2019-11-15T12:45:00 IST">
+      <class name="framework_testng.TestSuite.Class1">
+        <test-method status="PASS" signature="tc002()[pri:0, instance:framework_testng.TestSuite.Class1@4f970963]" name="tc002" duration-ms="15" started-at="2019-11-15T12:45:00 IST" finished-at="2019-11-15T12:45:00 IST">
           <reporter-output>
+            <line>
+              <![CDATA[tcoo2 executed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void framework_testng.ExtentReports.TestSuite2.tc001_reg_INvalid()]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- tc002 -->
+        <test-method status="PASS" signature="tc003()[pri:0, instance:framework_testng.TestSuite.Class1@4f970963]" name="tc003" duration-ms="0" started-at="2019-11-15T12:45:00 IST" finished-at="2019-11-15T12:45:00 IST">
           <reporter-output>
+            <line>
+              <![CDATA[tcoo3 executed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="tc001_reg_INvalid()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="tc001_reg_INvalid" duration-ms="0" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
+        </test-method> <!-- tc003 -->
+      </class> <!-- framework_testng.TestSuite.Class1 -->
+      <class name="framework_testng.TestSuite.Class2">
+        <test-method status="PASS" signature="tc005()[pri:0, instance:framework_testng.TestSuite.Class2@61f8bee4]" name="tc005" duration-ms="16" started-at="2019-11-15T12:45:00 IST" finished-at="2019-11-15T12:45:00 IST">
           <reporter-output>
+            <line>
+              <![CDATA[tcoo5 executed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- tc001_reg_INvalid -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
+        </test-method> <!-- tc005 -->
+        <test-method status="PASS" signature="tc006()[pri:0, instance:framework_testng.TestSuite.Class2@61f8bee4]" name="tc006" duration-ms="0" started-at="2019-11-15T12:45:00 IST" finished-at="2019-11-15T12:45:00 IST">
           <reporter-output>
+            <line>
+              <![CDATA[tcoo6 executed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tc001_reg_valid()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="tc001_reg_valid" duration-ms="0" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc001_reg_valid -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void framework_testng.ExtentReports.TestSuite2.tc001_reg_valid()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="afterClass" is-config="true" duration-ms="312" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:framework_testng.ExtentReports.TestSuite2@3dd4520b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-11-14T13:05:54 IST" finished-at="2019-11-14T13:05:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- framework_testng.ExtentReports.TestSuite2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tc006 -->
+      </class> <!-- framework_testng.TestSuite.Class2 -->
+    </test> <!-- test1 -->
+  </suite> <!-- default-suite -->
 </testng-results>
