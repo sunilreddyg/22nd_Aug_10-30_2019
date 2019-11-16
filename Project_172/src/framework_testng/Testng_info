@@ -262,7 +262,6 @@ Run Suite File:--->
 							<parameter name="url" value="http://hotmail.com"></parameter>
 							<parameter name="uid" value="sunilreddy"></parameter>
 							<parameter name="pwd" value="hello123"></parameter>
-					
 					</class>
 				</classes>
        </test>
@@ -341,8 +340,6 @@ Note:--->  We can find Parameter information at emailable report.
     parallel="instances": TestNG will run all the methods in the same instance in the same
 			 thread, but two methods on two different instances will be 
 			running in different threads.
-
-
 
 ----------------Dataprovider------------------------>
 
