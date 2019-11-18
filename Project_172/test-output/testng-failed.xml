@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [deafult]" parallel="tests">
-  <parameter name="appurl" value="http://cleartrip.com"/>
-  <test thread-count="5" name="test1(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
-        <parameter name="browsername" value="chrome"/>
+      <class name="framework_testng.DP.Excel.Run_Testng_DataProvider_Using_Excel">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="flight_search"/>
-          <include name="launchBrowser" invocation-numbers="0"/>
-          <include name="loadApp" invocation-numbers="0"/>
+          <include name="Get_user_data"/>
         </methods>
-      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
+      </class> <!-- framework_testng.DP.Excel.Run_Testng_DataProvider_Using_Excel -->
     </classes>
-  </test> <!-- test1(failed) -->
-</suite> <!-- Failed suite [deafult] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

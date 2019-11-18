@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="framework_testng.Suite_Parameter.Get_Parameters_From_Suite">
+      <class name="framework_testng.DP.Excel.Run_Testng_DataProvider_Using_Excel">
         <methods>
-          <include name="User_registration"/>
+          <include name="Get_user_data"/>
         </methods>
-      </class> <!-- framework_testng.Suite_Parameter.Get_Parameters_From_Suite -->
+      </class> <!-- framework_testng.DP.Excel.Run_Testng_DataProvider_Using_Excel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
