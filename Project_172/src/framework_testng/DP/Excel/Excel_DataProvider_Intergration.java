@@ -3,15 +3,12 @@ package framework_testng.DP.Excel;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -29,9 +26,6 @@ public class Excel_DataProvider_Intergration
 	{
 		
 	}
-	
-	
-	
 	
 	@DataProvider
 	public String [][] get_data()
@@ -54,10 +48,8 @@ public class Excel_DataProvider_Intergration
 	
 	
 	
-	
-	
-	
-	@AfterSuite
+
+	@AfterClass
 	public void Pre_Condition() throws IOException
 	{
 		FileInputStream fi=new FileInputStream(filepath);
@@ -67,7 +59,7 @@ public class Excel_DataProvider_Intergration
 	}
 	
 	
-	@BeforeSuite
+	@BeforeClass
 	public void Createoutput() throws IOException
 	{
 		FileOutputStream fo=new FileOutputStream("TestData\\OP1.xlsx");
