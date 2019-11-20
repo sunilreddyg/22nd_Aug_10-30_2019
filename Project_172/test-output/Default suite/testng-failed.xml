@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="framework_testng.DP.Excel.Run_Testng_DataProvider_Using_Excel">
+      <class name="framework_testng.Test_listners.MyTest">
         <methods>
-          <include name="Get_user_data"/>
+          <include name="tc002"/>
+          <include name="tc006"/>
+          <include name="tc005"/>
+          <include name="tc003"/>
         </methods>
-      </class> <!-- framework_testng.DP.Excel.Run_Testng_DataProvider_Using_Excel -->
+      </class> <!-- framework_testng.Test_listners.MyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
