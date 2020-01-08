@@ -15,7 +15,7 @@ public class RFB_Bank_Runner {
 		//Load webpage to browser window
 		driver.get("http://192.168.1.97/ebank2/home.aspx");
 		
-		
+		//Create object for admin testcase class
 	    Admin_Testcase TC=new Admin_Testcase(driver);
 		TC.Admin_login("Admin", "Admin");
 
