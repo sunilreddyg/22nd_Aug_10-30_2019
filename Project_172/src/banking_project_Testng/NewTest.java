@@ -14,6 +14,7 @@ import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 
 public class NewTest 
@@ -29,7 +30,15 @@ public class NewTest
 	@Test(priority=0)
 	public void Admin_login()
 	{
-		
+		if(driver.getTitle().equals(""))
+		{
+			test.log(LogStatus.INFO, "Expected title presented");
+		}
+		else
+		{
+			test.log(LogStatus.SKIP, "Precondition failed admin login page not displayed");
+			throw new SkipException("Adming homepage not displayed");
+		}
 		
 	}
 	
